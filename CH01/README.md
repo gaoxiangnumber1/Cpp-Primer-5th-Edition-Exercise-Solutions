@@ -1,19 +1,26 @@
 #CH01
+
 ##Exercises Section 1.1.1
+
 ###Exercise1.1:
+
 >Review the documentation for your compiler and determine what file naming convention it uses. Compile and run the main program from page 2.
 
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-1.png)
 
 ###Exercise 1.2
+
 >Change the program to return -1. A return value of -1 is often treated as an indicator that the program failed. Recompile and rerun your program to see how your system treats a failure indicator from main.
 
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-2.png)
 
  - Why 255: http://www.tldp.org/LDP/abs/html/exitcodes.html
 ##Exercises Section 1.2
+
 ###Exercise 1.3
+
 >Write a program to print Hello, World on the standard output.
+
 ```cpp
 #include <iostream>
 
@@ -23,8 +30,11 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.4
+
 >Our program used the addition operator, +, to add two numbers. Write a program that uses the multiplication operator, *, to print the product instead.
+
 ```cpp
 #include <iostream>
 
@@ -38,8 +48,11 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.5:
+
 >We wrote the output in one large statement. Rewrite the program to use a separate statement to print each operand.
+
 ```cpp
 #include <iostream>
 
@@ -58,8 +71,11 @@ int main()
     return 0;
 }
 ```
+
 ###Exercise 1.6:
+
 >Explain whether the following program fragment is legal.
+
 ```cpp
 std::cout	<< "The sum of " << v1;
 << " and " << v2;
@@ -69,9 +85,14 @@ If the program is legal, what does it do? If the program is not legal, why not? 
 
  - Illegal: 1-6.cpp|9|error: expected primary-expression before ‘<<’ token|.
  - Fix it: remove the spare semicolons.
+ 
+
 ##Exercises Section 1.3
+
 ###Exercise 1.7:
+
 >Compile a program that has incorrectly nested comments.
+
 ```cpp
 /*
 * comment pairs /* */ cannot nest.
@@ -83,8 +104,11 @@ int main()
 	return 0;
 }
 ```
+
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-7.png)
+
 ###Exercise 1.8:
+
 >Indicate which, if any, of the following output statements are legal:
 ```cpp
 std::cout << "/*";
@@ -98,9 +122,13 @@ std::cout << /* "*/" /* "/*" */;
 
  - Correct: Add a quote to the third cout.
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-8-2.png)
+
 ##Exercises Section 1.4.1
+
 ###Exercise 1.9:
+
 >Write a program that uses a while to sum the numbers from 50 to 100.
+
 ```cpp
 #include <iostream>
 
@@ -117,8 +145,11 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.10:
+
 >In addition to the ++ operator that adds 1 to its operand, there is a decrement operator (--) that subtracts 1. Use the decrement operator to write a while that prints the numbers from ten down to zero.
+
 ```cpp
 #include <iostream>
 
@@ -134,8 +165,11 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.11:
+
 >Write a program that prompts the user for two integers. Print each number in the range specified by those two integers. 
+
 ```cpp
 #include <iostream>
 
@@ -166,9 +200,13 @@ int main()
 	return 0;
 }
 ```
+
 ##Exercises Section 1.4.2
+
 ###Exercise 1.12:
+
 >What does the following for loop do? What is the final value of sum?
+
 ```cpp
 int sum = 0;
 for (int i = -100; i <= 100; ++i)
@@ -178,7 +216,9 @@ for (int i = -100; i <= 100; ++i)
  - Calculate the sum form -100 to 100, the result is 0.
 
 ###Exercise 1.13:
+
 >Rewrite the exercises from § 1.4.1 (p. 13) using for loops.
+
 ```cpp
 #include <iostream>
 
@@ -236,20 +276,27 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.14:
+
 >Compare and contrast the loops that used a for with those using a while. Are there advantages or disadvantages to using either form?
 
 | Ad/Disad | for | while |
 | ----- | ----- | ----- |
 | Advantages | 1.Locality, the variable in the scope of the loop. 2.Pattern happens so often: using a variable in a condition and incrementing that variable in the body. | 1.Clear when there is only one static condition. 2.Readable when the global variables incremented in the body. |
 | Disadvantages | while’s advantages | for’s advantages|
+
 ###Exercise 1.15:
+
 >Write programs that contain the common errors discussed in the box on page 16. Familiarize yourself with the messages the compiler generates.
 
  - Self-training
 ##Exercises Section 1.4.3
+
 ###Exercise 1.16:
+
 >Write your own version of a program that prints the sum of a set of integers read from cin.
+
 ```cpp
 #include <iostream>
 
@@ -269,19 +316,26 @@ int main()
 	return 0;
 }
 ```
+
 ##Exercises Section 1.4.4
+
 ###Exercise 1.17:
+
 >What happens in the program presented in this section if the input values are all equal? What if there are no duplicated values?
 
  - If the input values are all equal, it will print a line which shows the count of the number you input.
  - If there are no duplicated values, when different values input, a new line will be printed if you click Enter.
 
 ###Exercise 1.18:
+
 >Compile and run the program from this section giving it only equal values as input. Run it again giving it values in which no number is repeated.
 
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-18.png)
+
 ###Exercise 1.19:
+
 >Revise the program you wrote for the exercises in § 1.4.1 (p. 13) that printed a range of numbers so that it handles input in which the first number is smaller than the second.
+
 ```cpp
 #include <iostream>
 
@@ -312,9 +366,13 @@ int main()
 	return 0;
 }
 ```
+
 ##Exercises Section 1.5.1
+
 ###Exercise 1.20:
+
 >http://www.informit.com/title/032174113 contains a copy of Sales_item.h in the Chapter 1 code directory. Copy that file to your working directory. Use it to write a program that reads a set of book sales transactions, writing each transaction to the standard output.
+
 ```cpp
 #include "sales_item.h"
 
@@ -328,8 +386,11 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.21:
+
 >Write a program that reads two Sales_item objects that have the same ISBN and produces their sum.
+
 ```cpp
 #include "sales_item.h"
 
@@ -352,8 +413,11 @@ int main()
 	}
 }
 ```
+
 ###Exercise 1.22:
+
 >Write a program that reads several transactions for the same ISBN. Write the sum of all the transactions that were read.
+
 ```cpp
 #include "sales_item.h"
 
@@ -391,8 +455,11 @@ int main()
 	return 0;
 }
 ```
+
 ##Exercises Section 1.5.2
+
 ###Exercise 1.23:
+
 >Write a program that reads several transactions and counts how many transactions occur for each ISBN.
 
 ```cpp
@@ -426,12 +493,17 @@ int main()
 	return 0;
 }
 ```
+
 ###Exercise 1.24:
+
 >Test the previous program by giving multiple transactions representing multiple ISBNs. The records for each ISBN should be grouped together.
 
 ![](https://raw.githubusercontent.com/gaoxiangnumber1/NotesPhotos/master/Cpp/Cp/EX1-23.png)
+
 ##Exercises Section 1.6
+
 ###Exercise 1.25:
+
 >Using the Sales_item.h header from the Web site, compile and execute the bookstore program presented in this section.
 
  - It is the same as Exercise 1.22.
