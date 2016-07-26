@@ -394,7 +394,6 @@ int main()
 ##Exercises Section 1.5.2
 ###Exercise 1.23:
 >Write a program that reads several transactions and counts how many transactions occur for each ISBN.
-
 ```cpp
 #include "Sales_item.h"
 
