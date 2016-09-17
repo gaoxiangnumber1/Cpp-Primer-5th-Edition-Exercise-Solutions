@@ -3,8 +3,6 @@
 #include <vector>
 #include <algorithm>
 
-/*update 2016/9/09/17*/
-
 using namespace std;
 
 class HasPtr
