@@ -144,8 +144,8 @@ int main()
 
  - global_str is global variable, so the value is empty string.
  - global_int is global variable, so the value is zero.
- - local_int is a local variable which is not uninitialized, so it has a undefined value.
- - local_str is also a local variable which is not uninitialized, but it has a value that is defined by the class. So it is empty string.
+ - local_int is a local variable which is uninitialized, so it has a undefined value.
+ - local_str is also a local variable which is uninitialized, but it has a value that is defined by the class. So it is empty string.
 
 ##Exercises Section 2.2.2
 
