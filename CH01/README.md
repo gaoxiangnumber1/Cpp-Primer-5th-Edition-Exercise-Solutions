@@ -187,7 +187,7 @@ int main()
 	{
 		int temp = small;
 		small = big;
-		big = small;
+		big = temp;
 	}
 
 	// Print integers in the range [num1, num2]:
